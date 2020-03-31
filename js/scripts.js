@@ -1,13 +1,15 @@
+$(function() {
+    $("#inputCity").submit(function() {
+        getWeather($("#cityInput").val());
+        return false;
+    });
+});
 
-
-function getWeather() {
-
-    // Prelevo il nome della città cercata dal form
-    let cityName = document.getElementById("cityInput").value;
+function getWeather(cityInput) {
 
 // Richiamo la stringa per prelevare i dati dal OpenWeatherMap
  let key = "3872fc775b8e4760f6b780f6f15d22fb";
- let apiCall = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&lang=it&units=metric&appid=" + key;
+ let apiCall = "https://api.openweathermap.org/data/2.5/weather?q=" + cityInput + "&lang=it&units=metric&appid=" + key;
 
  // Estraggo la data e gestisco lo stile del sito alla pressione del tasto ricerca
     let data = new Date();
