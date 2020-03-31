@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>simpleWeather</title>
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,900,700,500' rel='stylesheet' type='text/css'>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container-img"></div>
+
+        <!-- Area di Ricerca -->
+        <div class="logo" id="logo">simpleWeather</div>
+
+        <div class="search-area" id="search-area">
+            <input type="text" id="cityInput" placeholder="Inserisci il nome di una città.."><input type="button" class="search-button" value="Vai" onclick="getWeather()">
+        </div>
+
+        <!-- Area Principale -->
+        <div id="main-area" class="main-area">
+            
+            <div class="dati">
+                <p id="date"></p>
+                <p id="city"></p>
+                <br>
+                <p id="temp"><span class="unit"></span></p>
+
+            </div>
+            
+            <div class="info">
+
+                <div class="infolab-wrapper">
+                    <p class="infolab">Temp. percepita <span id="percTemp"></span></p>
+                    <p class="infolab">Temp. minima <span id="minTemp"></span> </p>
+                    <p class="infolab">Temp. massima <span id="maxTemp"></span> </p>
+                    <br>
+                    <p class="infolab">Umidità <span id="umidity"></span> </p>
+                    <p class="infolab">Vento <span id="wind"></span> </p>
+                    <br>
+                    <p class="infolab">Alba <span id="sunrise"></span> </p>
+                    <p class="infolab">Tramonto <span id="sunset"></span> </p>
+                </div>
+
+                <div class="condition-area">
+                    <div class="condition-wrapper">
+                        <img id="condition-img">
+                        <p id="condition"></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Area Errore -->
+        <div id="error" class="main-area">
+            
+            <div class="error">
+                <p id="400" class="400">Richiesta non valida! <br> Prova ad inserire un'altra città!</p>
+                <p id="404" class="404">Non trovo nessuna città con questo nome,<br> controlla di averla scritta correttamente!</p>
+            </div>
+
+        </div>
+
+
+<!-- Javascript -->
+<script src="./js/scripts.js"></script>   
+<script src="./js/geolocation.js"></script> 
+</body>
+</html>
+
