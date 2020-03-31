@@ -202,8 +202,17 @@ body, html {
     transition: 0.4s ease;
 }
 
-
-
+.rights {
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    text-align: right;
+    font-family: 'roboto', sans-serif;
+    color: #D9F1FF;
+    font-size: 12px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
 
 
 /* ----- Responsive ----- */
