@@ -1,6 +1,7 @@
 # simpleWeather
 
-Ciao a tutti, questa è la repository per il mio progetto JavaScript per Start2Impact.
+Ciao a tutti, 
+questa è la repository per il mio progetto JavaScript per Start2Impact.
 Il sito, chiamato simpleWeather, consente la visualizzazione del meteo attraverso la geolocalizzazione dell'utente o tramite
 l'apposita barra di ricerca testuale.
 
