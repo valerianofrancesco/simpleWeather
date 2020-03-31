@@ -22,9 +22,15 @@
         <!-- Area di Ricerca -->
         <div class="logo" id="logo">simpleWeather</div>
 
-        <div class="search-area" id="search-area">
-            <input type="text" id="cityInput" placeholder="Inserisci il nome di una città.."><input type="button" class="search-button" value="Vai" onclick="getWeather()">
-        </div>
+
+        <form id="inputCity" method="POST">
+            <div class="search-area" id="search-area">
+                <input type="text" id="cityInput" placeholder="Inserisci il nome di una città..">
+                <input type="submit" class="search-button" value="Vai">
+            </div>
+        </form>
+
+ 
 
         <!-- Area Principale -->
         <div id="main-area" class="main-area">
